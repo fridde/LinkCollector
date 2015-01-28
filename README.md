@@ -36,6 +36,16 @@ Now you are basically done. The rest is fine-tuning.
 # Things you will want to do
 
 ## Access your page
-Your page will reside in yourdomain.com/linkCollector or wherever you put the folder.
+Your page will reside in `yourdomain.com/linkCollector` or wherever you put the folder.
 
-## Cn
+## Updating your database
+Right now it's rather manually, although the steps can be done in a few seconds/minutes.
+
+1. Export the links you want to export as a database with the name `Evernote.enex`.
+2. If your file is larger than 10 MB, you may want to use the awesome python-script `enex_minimizer.py` (found in ´files´) to decrease the size of the file. See the file for instructions.
+3. Upload your database unto your server into the folder ´files´.
+4. "Visit" the page `yourdomain.com/linkCollector/update_db.php`. You are all set.
+
+## Protecting certain links
+
+Here comes the fun! If you have certain links that should only be visible to some certain person, you tag the link with a tag starting with `@`, i.e. `@emil`. The tagging is solely done in Evernote.
